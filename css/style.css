@@ -1,0 +1,940 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: black;
+	}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+body {
+	line-height: 1.3;
+	font-family: Georgia, serif;
+	font-size: 62.5%;
+	color: black;
+	height: 100%;
+	}
+ol, ul {
+	list-style: none;
+	}
+blockquote, q {
+	quotes: none;
+	}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+/*----------------RESET COMPLETE... ...CHANGEABLE STYLES HERE*-----------------/
+
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+	
+html, body{
+	height: 100%;
+	margin:0 auto;
+	text-align:left;
+	font: normal small/1.2em Verdana,sans-serif;
+	line-height: 1.3em;
+	cursor: url(hand.png), pointer;
+	position: relative;
+	background: rgb(221,221,221);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZGRkZGRkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSIjZWZlZmVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2JiYmJiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg,  rgba(221,221,221,1) 0%, rgba(239,239,239,1) 49%, rgba(187,187,187,1) 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(221,221,221,1)), color-stop(49%,rgba(239,239,239,1)), color-stop(100%,rgba(187,187,187,1)));
+	background: -webkit-linear-gradient(-45deg,  rgba(221,221,221,1) 0%,rgba(239,239,239,1) 49%,rgba(187,187,187,1) 100%);
+	background: -o-linear-gradient(-45deg,  rgba(221,221,221,1) 0%,rgba(239,239,239,1) 49%,rgba(187,187,187,1) 100%);
+	background: -ms-linear-gradient(-45deg,  rgba(221,221,221,1) 0%,rgba(239,239,239,1) 49%,rgba(187,187,187,1) 100%);
+	background: linear-gradient(135deg,  rgba(221,221,221,1) 0%,rgba(239,239,239,1) 49%,rgba(187,187,187,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#bbbbbb',GradientType=1 );
+	
+	}
+
+.wrap{
+	position: absolute;
+	height: 640px;
+	width: 1024px;
+	margin: auto;
+	top: 0; bottom: 0; left: 0; right: 0;
+	overflow: hidden;
+	border: 3px solid #777;
+	background-position: -307px top;
+	background-repeat: no-repeat;
+	background-size: 1600px;
+	transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s; 
+	-o-transition: all 1s;
+	}
+	
+
+
+/* INTRO */
+
+
+
+.intro{
+	background-image: url(../intro/images/1back.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+#draggable{
+	position: absolute;
+	top: 311px;
+	left: 190px;
+	width: 50px;
+	height: 100px;
+}
+
+#droppable{
+	width: 140px;
+	height: 170px;
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	opacity: 0;
+}
+
+#oneDir{
+	position: absolute;
+	top: 20px;
+	left: 40px;
+}
+
+#oneArrow{
+	position: absolute;
+	top: 290px;
+	left: 240px;
+	width: 212px;
+}
+
+#counter{
+	position: absolute;
+	top: 390px;
+	left: -10px;
+}
+
+.transitionStart{
+	background-color: white;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 20;
+	opacity: 0;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	-o-transition: all 1s;	
+}
+
+.endTransition{
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 21;
+	opacity: 100;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	-o-transition: all 1s;	
+}
+
+
+
+
+
+/* ICE */
+
+.pushforice{
+	background-image: url(../ice/images/slider.jpg);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-position: 100px -190px;
+	background-size: 800px;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	-o-transition: all 1s;
+}
+
+
+.position{
+	position: absolute;
+	top: 0; left: 0;
+	width: 1024px;
+	height: 600px;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	-o-transition: all 1s;
+}
+
+#pcupUnder{
+	position: absolute;
+	top: 345px; left: 435px;
+	z-index: 2;
+	width: 145px;
+}
+
+#pcup{
+	position: absolute;
+	top: 345px; left: 435px;
+	z-index: 10;
+	width: 145px;
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s; 
+	-o-transition: all .3s;
+}
+
+.ice1{
+	position: absolute;
+	width: 100px;
+	height: 270px;
+	top: 318px; left: 458px;
+	z-index: 3;
+	overflow: hidden;
+}
+
+.cube1{
+	position: absolute;
+	top: -50px;
+	left: 0px;
+}
+
+.cube2{
+	position: absolute;
+	top: -80px;
+	left: 30px;
+}
+.cube3{
+	position: absolute;
+	top: -45px;
+	left: 90px;
+}
+.cube4{
+	position: absolute;
+	top: -55px;
+	left: 50px;
+}
+
+.cube5{
+	position: absolute;
+	top: -65px;
+	left: 70px;
+}
+
+.cube6{
+	position: absolute;
+	top: -190px;
+	left: 45px;
+}
+
+.cube7{
+	position: absolute;
+	top: -190px;
+	left: 5px;
+}
+.cube8{
+	position: absolute;
+	top: -175px;
+	left: 5px;
+}
+.cube9{
+	position: absolute;
+	top: -105px;
+	left: 85px;
+}
+.cube10{
+	position: absolute;
+	top: -95px;
+	left: 65px;
+}
+
+.cube, .cubeX{
+	width: 39px;
+	height: 45px;
+}
+#twoDir{
+	position: absolute;
+	top: 195px; right: 55px;
+	z-index: 11;
+}
+
+#twoArrow{
+	position: absolute;
+	top: 320px; right: 250px;
+	z-index: 12;	
+}
+
+
+
+
+/* CHOOSE YOUR BRAND */
+
+.choose {
+	position: absolute;
+	width: 1024px;
+	margin: auto;
+	left: 0; right: 0;
+	overflow: hidden;
+	-webkit-transform: scale(.50);
+	top: -325px;
+}
+
+.chooseFake{
+	background-image: url(../drinkSelection/images/slider.jpg);
+	background-position: -307px top;
+}
+
+.six{
+	width: 785px;
+	height: 90px;
+	margin: 0px auto;
+}
+
+.seven{
+	width: 785px;
+	height: 90px;
+	margin: 0px auto;
+}
+
+.six a{
+	margin-left: 31px;
+	height: 90px;
+	width: 90px;
+}
+
+.seven a{
+	margin-left: 16px;
+	height: 90px;
+	width: 90px;
+}
+
+.six.one{
+	margin-top: 80px;
+}
+
+.seven.two, .six.three, .six.four{
+	margin-top: 40px;
+}
+
+
+a{
+	width: 90px;
+	height: 90px;
+	cursor: url(hand.png), pointer;
+}
+
+a img{
+	width: 90px;
+	height: 90px;
+}
+
+a img:active{
+	transform: scale(.95,.95);
+	-ms-transform: scale(.95,.95);
+	-webkit-transform: scale(.95,.95);
+	-o-transform: scale(.95,.95); 
+	-moz-transform: scale(.95,.95); 
+}
+
+a.backButton{
+	position: absolute;
+	top: 415px;
+	left: 125px;
+	width: 95px;
+	height: 95px;
+}
+
+.backButton img{
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	top: 25px; left: 25px;
+}
+
+#threeDir{
+	width: 150px;
+	height: 900px;
+	position: absolute;
+	top: 315px;
+	left: 5px;
+	display: none;
+}
+
+#threeDirFake{
+	width: 150px;
+	height: 900px;
+	position: absolute;
+	top: 315px;
+	left: 5px;
+}
+
+.threeCall{
+	position: absolute;
+	top: 70px;
+	left: 0;
+}
+
+#threeArrow{
+	height: 59px;
+	position: absolute;
+	top: 0px;
+	left: 43px;
+}
+
+.fiveOne{
+	position: absolute;
+	top: 279px; left: 240px;
+}
+
+.fiveTwo{
+	position: absolute;
+	top: 415px; left: 308px;
+}
+
+.fiveThree{
+	position: absolute;
+	top: 475px; left: 474px;
+}
+
+.fiveFour{
+	position: absolute;
+	top: 415px; left: 635px;
+}
+
+.fiveFive{
+	position: absolute;
+	top: 279px; left: 695px;
+}
+
+.sixOne{
+	position: absolute;
+	top: 230px; left: 260px;
+}
+
+.sixTwo{
+	position: absolute;
+	top: 365px; left: 285px;
+}
+
+.sixThree{
+	position: absolute;
+	top: 475px; left: 390px;
+}
+
+.sixFour{
+	position: absolute;
+	top: 475px; left: 550px;
+}
+
+.sixFive{
+	position: absolute;
+	top: 365px; left: 650px;
+}
+
+.sixSix{
+	position: absolute;
+	top: 230px; left: 675px;
+}
+
+.sevenOne{
+	position: absolute;
+	top: 229px; left: 210px;
+}
+
+.sevenTwo{
+	position: absolute;
+	top: 350px; left: 240px;
+}
+
+.sevenThree{
+	position: absolute;
+	top: 425px; left: 345px;
+}
+
+.sevenFour{
+	position: absolute;
+	top: 475px; left: 474px;
+}
+
+.sevenFive{
+	position: absolute;
+	top: 425px; left: 595px;
+}
+
+.sevenSix{
+	position: absolute;
+	top: 350px; left: 695px;
+}
+
+.sevenSeven{
+	position: absolute;
+	top: 229px; left: 725px;
+}
+
+
+a.largeButt{
+	width: 154px;
+	height: 154px;
+	position: absolute;
+	top: 254px;
+	left: 436px;
+}
+
+a.largeButt img, a.largeButtUR img{
+	width: 154px;
+	height: 154px;
+}
+
+a.largeButtUR{
+	width: 154px;
+	height: 154px;
+	position: absolute;
+	top: 251px;
+	left: 438px;
+}
+
+.selectionScreen{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+
+/* DISPENSE */
+
+.dispense{
+	background-image: url(../images/5back.jpg);
+}
+
+.dispenser{
+	position: absolute;
+	top: 640px;
+}
+
+#cupUnder{
+	position: absolute;
+	top: 250px; left: 430px;
+	z-index: 2;
+	width: 175px;
+}
+
+#mask{
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 8;
+}
+
+#fiveDir{
+	position: absolute;
+	top: 20px; left: 780px;
+	z-index: 11;
+	
+}
+
+#fiveArrow{
+	position: absolute;
+	top: 70px; left: 620px;
+	z-index: 12;
+}
+
+#cup{
+	position: absolute;
+	top: 250px; left: 430px;
+	z-index: 10;
+	width: 175px;
+}
+
+#fillCup{
+	position: absolute;
+	top: 22px; left: 482px;
+	display: none;
+}
+
+#fillCup img{
+	width: 80px;
+	height: 80px;
+}
+
+.cupFill{
+	position: absolute;
+	top: 250px; left: 430px;
+	z-index: 9;
+	width: 175px;
+	clip: rect(298px 175px 298px 0px);
+}
+
+#currentFillAmount{
+	width: 200px;
+	height: 350px;
+	position: absolute;
+	z-index: 4;
+	top:575px;
+	left: 420px;
+	background-color: black;
+}
+
+.streamMask{
+	position: absolute;
+	top: 200px;
+	left: 500px;
+	width: 50px;
+	height: 270px;
+	overflow: hidden;
+}
+
+@-webkit-keyframes bounce {
+  0%   { top: -300px; }
+  50%  {top: 0;}
+  100% { top: -300px; }
+}
+
+#brownStream1, #clearStream1, #pinkStream1, #orangeStream1, #redStream1, #grapeStream1, #peachStream1{
+	position: absolute;
+	overflow: hidden;
+	top: -398px; left: 3px;
+	z-index: 3;
+	transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s; 
+	-o-transition: all 1s;
+	width: 47px;
+	height: 398px;
+	opacity: .9;
+	display: none;
+}
+
+#brownStream2, #clearStream2, #pinkStream2, #orangeStream2, #redStream2, #grapeStream2, #peachStream2{
+	position: absolute;
+	top: -300px; left: 0px;
+	opacity: .6;
+	z-index: 4;
+	-webkit-animation: bounce 1s infinite;
+}
+
+.backSign{
+	position: absolute;
+	width: 280px;
+	height: 270px;
+	top: -375px;
+	left: 30px;
+	z-index: 13;
+	display: none;
+}
+
+/*
+.goBack{
+	width: 49px;
+	height: 49px;
+	background-image: url(../brown/images/goBack.png);
+	background-size: contain;
+	position: absolute;
+	top: 107px; left: 200px;
+	z-index: 15;
+}
+
+.goBack:active{
+	transform: scale(.95,.95);
+	-ms-transform: scale(.95,.95);
+	-webkit-transform: scale(.95,.95);
+	-o-transform: scale(.95,.95); 
+	-moz-transform: scale(.95,.95); 
+}
+*/
+
+
+
+
+/* Ready to see all the freestyle choices */
+
+.ready{
+	background-image: url(../ready/images/radialBack.jpg);
+	background-repeat: no-repeat;
+}
+
+.restart{
+	position: absolute;
+	top: 505px;
+	left: 500px;
+	width: 70px;
+	height: 70px;
+}
+
+.restart img{
+	width: 41px;
+	height: 45px;
+	margin: auto;
+}
+
+a.readySign{
+	position: absolute;
+	width: 354px;
+	height: 350px;
+	top: -340px;
+	left: 350px;
+	z-index: 13;
+}
+
+a.readySign img{
+	width: 354px;
+	height: 350px;
+}
+
+a.readySign img:active{
+	transform: scale(1);
+	-ms-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1); 
+	-moz-transform: scale(1); 
+}
+
+
+
+/* BRANDS WITH DR. PEPPER */
+
+.brands>*{
+	position: absolute;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	-o-transition: all 1s;
+
+}
+
+.readyReplay{
+	width: 54px;
+	height: 65px;
+	top: 480px;
+	right: 140px;
+}
+
+.cokeAndTag{
+	top: 45px;
+	left: 63px;
+}
+
+.diet.unique, .diet{
+	top: 45px;
+	left: 63px;
+}
+
+.cf{
+	top: 45px;
+	left: 63px;
+	opacity: 0;
+}
+
+.regular{
+	top: 45px;
+	left: 63px;
+	opacity: 1;
+}
+
+.regular.unique{
+	top: 45px;
+	left: 63px;
+}
+
+.seventy{
+	top: 460px;
+	left: 350px;
+}
+
+.eighty{
+	top: 460px;
+	left: 473px;
+}
+
+.ninety{
+	top: 460px;
+	left: 596px;
+}
+
+.rollOver{
+	top: 445px;
+	left: 100px;
+}
+
+.disclaimer{
+	bottom: 20px;
+	left: 0; right: 0; margin: auto;
+	width: 80%;
+}
+
+.disclaimer p{
+	font-size: 8px;
+	text-align: center;
+	line-height: 12px;
+}
+
+/* Flavor Background Images */
+
+
+.barqs{
+	background-image: url(../flavors/barqs/images/barqs.jpg);
+}
+
+.barqDiet{
+	background-image: url(../flavors/barqDiet/images/barqDiet.jpg);
+}
+
+.coke{
+	background-image: url(../flavors/coke/images/coke.jpg);
+}
+
+.cokeZero{
+	background-image: url(../flavors/cokeZero/images/cokeZero.jpg);
+}
+
+.dc{
+	background-image: url(../flavors/dc/images/dcBack.jpg);
+}
+
+.dcCF{
+	background-image: url(../flavors/dcCF/images/dcCF.jpg);
+}
+
+.dasani{
+	background-image: url(../flavors/dasani/images/dasani.jpg);
+}
+
+.dasen{
+	background-image: url(../flavors/dasen/images/dasen.jpg);
+}
+
+.dp{
+	background-image: url(../flavors/drPep/images/dp.jpg);
+}
+
+.dpD{
+	background-image: url(../flavors/drPepDiet/images/dpD.jpg);
+}
+
+.fanZero{
+	background-image: url(../flavors/fantaZero/images/fanZero.jpg);
+}
+
+.fanta{
+	background-image: url(../flavors/fanta/images/fanta.jpg);
+}
+
+.hic{
+	background-image: url(../flavors/hic/images/hic.jpg);
+}
+
+.mmLight{
+	background-image: url(../flavors/mmLight/images/mmLight.jpg);
+}
+
+.mm{
+	background-image: url(../flavors/mm/images/mm.jpg);
+}
+
+.myz{
+	background-image: url(../flavors/myz/images/myzback.jpg);
+}
+
+.my{
+	background-image: url(../flavors/mellow/images/mellow.jpg);
+}
+
+.pibb{
+	background-image: url(../flavors/pibb/images/pibb.jpg);
+}
+
+.pibbZero{
+	background-image: url(../flavors/pibbZero/images/pibbZero.jpg);
+}
+
+.powerZ{
+	background-image: url(../flavors/powerZ/images/powerZ.jpg);
+}
+
+.power{
+	background-image: url(../flavors/power/images/power.jpg);
+}
+.seaGAD{
+	background-image: url(../flavors/seaDiet/images/seaGAD.jpg);
+}
+
+.seagrams{
+	background-image: url(../flavors/seagrams/images/seagrams.jpg);
+}
+
+.spriteZero{
+	background-image: url(../flavors/spriteZero/images/spriteZero.jpg);
+}
+
+.sprite{
+	background-image: url(../flavors/sprite/images/sprite.jpg);
+}
+
+.wrapWater{
+	background-image: url(../flavors/barqs/images/barqs.jpg);
+	position: absolute;
+	height: 640px;
+	width: 1024px;
+	margin: auto;
+	top: 0; bottom: 0; left: 0; right: 0;
+	overflow: hidden;
+	border: 3px solid #777;
+	background-position: 25px -400px;
+	background-repeat: no-repeat;
+	background-size: 970px;
+	transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s; 
+	-o-transition: all 1s;
+}

@@ -1,0 +1,126 @@
+/* SPLASH */
+
+.splash{
+	background-image: url(../splash/images/back.jpg);
+}
+
+.seeDrop{
+	position: absolute;
+	top: 360px;
+	left: -200px;
+}
+
+a.seeDrop img{
+	width: 184px;
+	height: 145px;
+}
+
+
+.abs{
+	position: absolute
+}
+
+.barqs{
+	top: 60px;
+	left: 850px;
+}
+
+.coke{
+	top: 35px;
+	left: 370px;
+}
+
+.dasLem{
+	top: 120px;
+	left: 750px;
+}
+
+.cokeVanilla{
+	top: 260px;
+	left: 105px;
+}
+
+.cokeOrange{
+	top: 135px;
+	left: 40px;
+}
+
+.cokeCherry{
+	top: 175px;
+	left: 440px;
+}
+
+.dasSen{
+	top: 175px;
+	left: 335px;
+}
+.fanta{
+	top: 235px;
+	left: 770px;
+}
+.fsm{
+	top: 345px;
+	left: 462px;
+}
+.hic{
+	top: 45px;
+	left: 110px;
+}
+
+.mm{
+	top: 70px;
+	left: 665px;
+}
+
+.mmLt{
+	top: 290px;
+	left: 225px;
+}
+
+.my{
+	top: 150px;
+	left: 875px;
+}
+
+
+.power{
+	top: 58px;
+	left: 290px;
+}
+
+.spriteb{
+	top: 155px;
+	left: 175px;
+}
+
+.spZeroGrape{
+	top: 200px;
+	left: 625px;
+}
+
+.zero{
+	top: 73px;
+	left: 555px;
+}
+
+.expBut{
+	width: 360px;
+	left: 334px;
+	top: 180px;
+}
+
+.clickAny{
+	width: 324px;
+	top: 570px;
+	left: 354px;
+}
+
+.roll{
+	opacity: 0;
+}
+
+.introClickArea{
+	top: 0; left: 0;
+	width: 1028px;
+	height: 640px;
+}
